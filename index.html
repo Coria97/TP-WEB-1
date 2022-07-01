@@ -1,31 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-        <title>Viaje Compartido</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/tablaDinamica.js"></script>
+    <title>Viaje Compartido</title>
+</head>
 
-    <body>
-        <!-- Inicio del encabezado-->
-        <header>
-            <figure>
-                <img src="imagenes/logo.png" title="logotipo" />
-            </figure>
-            <h1>Viaje Compartido</h1>
-            <label for="btn-menu"><img src="imagenes/btn-menu.png" title="logotipo" /></label>
-            <input type="checkbox" id="btn-menu">
-            <nav> 
-                <ul class="menu">
-                    <li><a href="index.html"> Home </a></li>
-                    <li><a href="publicar.html"> Publica  </a></li>
-                    <li><a href="publicaciones.html"> Publicaciones </a></li>
-                </ul>
-            </nav>
-        </header>
-        <!--fin del encabezado-->
+<body>
+    <div id="contenedor">
         <!--inicio del articulo principal-->
         <article class="maincontainer">
             <!-- inicio de seccion informacion-->
@@ -66,7 +51,7 @@
                     viaje y hacen
                     que el coche consuma y contamine un 80% más.
                 </p>
-            <!--fin de seccion informacion-->
+                <!--fin de seccion informacion-->
             </section>
             <!--inicio de seccion lista normas-->
             <section class="listaNormas">
@@ -80,13 +65,50 @@
                 </ol>
             </section>
             <!-- fin de seccion lista normas-->
+            <section>
+                <h2>Contactos</h2>
+                <p>Aca podes encontrar algunos contacto de personas que ya viajaron con nuestro servicio para conocer su
+                    experiencia.
+                    Tambien tenes la opcion de dejar tus datos para que nuevos viajeros te contacten para comentarles como
+                    fue tu
+                    experiencia en particular.
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Comentario</th>
+                            <th>Borrar dato</th>
+                            <th>Editar dato</th>
+                        </tr>
+                    </thead>
+                    <tbody id="jsBodyTabla">
+                    </tbody>
+                </table>
+                <form class="formCom">
+                    <label for="txtNombre">Ingrese nombre:</label>
+                    <input type="text" id="jstxtNombre" />
+                
+                    <label for="txtApellido">Ingrese apellido:</label>
+                    <input type="text" id="jstxtApellido" />
+                
+                    <label for="txtComentario">Ingrese Comentario:</label>
+                    <input type="text" id="jstxtComentario" />
+                
+                    <button class="btn" type="push" id="agregar">Agregar comentarios</button>
+                    <button class="btn" type="push" id="agregarRapido">Agregado rapido</button>
+                    
+                    <label for="txtFiltro">Palabra a filtrar:</label>
+                    <input type="text" id="jstxtFiltro" />
+                
+                    <button class="btn" type="push" id="Filtrar">Filtrar comentarios</button>
+                    <button class="btn" type="push" id="borrarFiltro">Sacar Filtro</button>
+                </form>
+            </section>
         </article>
         <!--fin del articulo principal-->
-        <!-- inicio de pie de pagina -->
-        <footer>
-            <p>Pagina desarollada por <span> Matias Fumiatti </span> y <span>Santiago Coria </span> </p>
-        </footer>
-        <!-- fin del pie de pagina -->
-    </body>
+    </div>
+</body>
 
 </html>

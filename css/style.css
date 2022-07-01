@@ -76,7 +76,7 @@ header nav ul li {
 
 }
 
-header nav ul li a{
+.btnNav{
     text-decoration: none;
     color: #F4AE3F;
     padding: 0px;
@@ -100,6 +100,7 @@ h2{
     text-align: center;
     color: rgb(0, 15, 56);
 } 
+
 /* parrafos */
 
 p{
@@ -121,10 +122,40 @@ footer p{
     font-size: 10px;
     text-align: right;
     padding: 0;
+    padding-right: 10px;
     margin: 0;
-    margin-right: 10px;
     background-color: #28696A;
     color: #F4AE3F;
+}
+/* Pagina Publicaciones */
+
+.maincontainer .publicacion{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.maincontainer .publicacion article{
+    width: 75%;
+    background-color: whitesmoke;
+    border: 3px solid #28696A;
+    border-radius: 5px;
+    margin: 20px;
+    text-align: center;
+}
+
+.maincontainer .publicacion article h3{
+    font-family: Segoe UI;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 0px 1px 1px #303030;
+    color: rgb(0, 15, 56);
+}
+
+.maincontainer .publicacion article p{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bolder;
 }
 
 /* pagina publicar */
@@ -136,14 +167,16 @@ footer p{
 label{
     display: inline;
     margin: 2px;
-    width: 100%;
 }
 
 .cuerpo{
     justify-content: center;
 }
 
-form{
+/* formularios */
+
+
+form {
     width: 345px;
     height: auto;
     border: 2px solid black;
@@ -151,12 +184,17 @@ form{
     padding: 20px 20px;
     box-sizing: border-box;
     background: rgb(0, 0, 0, 0.2);
+    margin: auto;
 }
 
-form input {
+.formCom{
+    margin-top: 25px;
+}
+
+input {
     align-items: center;    
     margin: 2px;
-    width: 100%;
+    width: 98%;
     box-sizing: border-box;
 }
 
@@ -164,13 +202,13 @@ input:focus{
     border: 1px solid blue;
 }
 
-form .imprime{
+.imprime{
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-form button{
+.btn{
     width: 100%;
     margin-top: 10px;
     border: 1.5px solid black;
@@ -178,12 +216,12 @@ form button{
     border-radius: 10px;
 }
 
-form button:hover{
+button:hover{
     cursor: pointer;
     background-color: whitesmoke;
 }
 
-form .rectangulocaptcha{
+.rectangulocaptcha{
     background: whitesmoke;
     text-align: center;
     letter-spacing: 10px;
@@ -193,6 +231,33 @@ form .rectangulocaptcha{
     display: flex;
     justify-content: center;
 }
+
+/* tabla*/
+
+table{
+    width: 90%;
+}
+
+th{
+    background: teal;
+}
+
+tbody{
+    background: whitesmoke;
+}
+
+tbody, th{
+    color: black;
+}
+
+table, th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto;
+   
+}
+
 
 /*-------------------------------------------------------------*/
 
@@ -252,12 +317,14 @@ form .rectangulocaptcha{
         margin-right: 10px;
     }  
 
-    header nav ul li a{
+    .btnNav{
         display: block;
         width: 100px;
+        height: 20px;
         text-decoration: none;
         padding: 0px;
         padding-left: 3px;
+        padding-right: 3px;
         margin-right: 8px;
         border-radius: 0 2px 2px 0;
         border-left: 4px solid #F4AE3F;
@@ -278,6 +345,11 @@ form .rectangulocaptcha{
         padding-right: 5px;
     }
 
+    /* pagina publicaciones */
+
+    .maincontainer .publicacion article{
+        width: 25%;
+    }
     /* pagina publicar */
 
     .maincontainer .cuerpo{

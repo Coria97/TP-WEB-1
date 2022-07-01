@@ -5,78 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/captcha.js"></script>
     <title>Viaje Compartido</title>
 </head>
 
 <body>
-    <!-- Inicio del encabezado -->
-    <header>
-        <figure>
-            <img src="imagenes/logo.png" title="logotipo" />
-        </figure>
-        <h1>Viaje Compartido</h1>
-        <label for="btn-menu"><img src="imagenes/btn-menu.png" title="logotipo" /></label>
-        <input type="checkbox" id="btn-menu">
-        <nav> 
-            <ul class="menu">
-                <li><a href="index.html"> Home </a></li>
-                <li><a href="publicar.html"> Publica</a></li>
-                <li><a href="publicaciones.html"> Publicaciones </a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- Fin del encabezado -->
-    <!-- Inicio del contenedor principal-->
-    <section class="maincontainer">
-        <h2>Ingrese sus datos en el siguiente formulario para publicar su viaje</h2>
-        <div class="cuerpo">
-            <form id="formulario">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre" value="" />
-                
-                <label for="Destino">Apellido: </label>
-                <input type="text" id="apellido" name="apellido" placeholder="Apellido"   value="" />
-                
-                <label for="date">Fecha de viaje:</label>
-                <input id="date" type="date">
-                
-                <label for="salida">Salida: </label>
-                <input type="text" id="salida" name="salida" placeholder="Salida" value="" />
-                
-                <label for="destino">Destino: </label>
-                <input type="text" id="desitno" name="destino" placeholder="Destino" value="" />
-                
-                <label for="hsalida">Horario de salida:</label>
-                <input type="time" id="hsalida" name="hsalida" value="" />
-                
-                <label for="precio">Precio:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Precio" value="" />
-                
-                <label for="contacto">Contacto: </label>
-                <input type="tel" id="contacto" name="contacto" placeholder="Nro Contacto" pattern="([0-9]{3}) [0-9]{3}[ -][0-9]{4}" value="" />
-                
-                <div class="imprime">
-                    <p class="rectanguloCaptcha" id="muestracaptcha"></p>
-                </div>
-                <label for="txtCap">Ingrese el captcha:</label>
-                <input type="text" id="txtCap" />
-                <button type="submit"> Enviar </button>
-                <p id="muestraResultado"></p>
-            </form>
-            <aside>
-                <figure class="imagen">
-                    <img src="Imagenes/amigosViajando.jpg" title="Imagen de gente que ya uso el servicio" />
-                </figure>
-            </aside>
-        </div>
-    </section>
-    <!-- Fin del contenedor principal-->
-    <!-- Inicio del pie de pagina-->
-    <footer>
-        <p>Pagina desarollada por <span> Matias Fumiatti </span> y <span>Santiago Coria </span> </p>
-    </footer>
-    <!-- Fin del pie de pagina-->
-    <script type="text/javascript" src="js/captcha.js"></script>
+    <div id="contenedor">
+        <!-- Inicio del contenedor principal-->
+        <section class="maincontainer">
+            <h2>Ingrese sus datos en el siguiente formulario para publicar su viaje</h2>
+            <div class="cuerpo">
+                <form id="formulario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" value="" />
+                    
+                    <label for="Destino">Apellido: </label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Apellido"   value="" />
+                    
+                    <label for="date">Fecha de viaje:</label>
+                    <input id="date" type="date">
+                    
+                    <label for="salida">Salida: </label>
+                    <input type="text" id="salida" name="salida" placeholder="Salida" value="" />
+                    
+                    <label for="destino">Destino: </label>
+                    <input type="text" id="desitno" name="destino" placeholder="Destino" value="" />
+                    
+                    <label for="hsalida">Horario de salida:</label>
+                    <input type="time" id="hsalida" name="hsalida" value="" />
+                    
+                    <label for="precio">Precio:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Precio" value="" />
+                    
+                    <label for="contacto">Contacto: </label>
+                    <input type="tel" id="contacto" name="contacto" placeholder="Nro Contacto" pattern="([0-9]{3}) [0-9]{3}[ -][0-9]{4}" value="" />
+                    
+                    <div class="imprime">
+                        <p class="rectanguloCaptcha" id="muestracaptcha"></p>
+                    </div>
+                    <label for="txtCap">Ingrese el captcha:</label>
+                    <input type="text" id="txtCap" />
+                    <button type="submit"> Enviar </button>
+                    <p id="muestraResultado"></p>
+                </form>
+                <aside>
+                    <figure class="imagen">
+                        <img src="Imagenes/amigosViajando.jpg" title="Imagen de gente que ya uso el servicio" />
+                    </figure>
+                </aside>
+            </div>
+        </section>
+        <!-- Fin del contenedor principal-->
+    </div>
 </body>
 
 </html>
